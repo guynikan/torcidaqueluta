@@ -1,0 +1,10 @@
+@mixin grid-structure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1200px;
+  margin: 0 auto;
+  background: whitesmoke;
+  padding: 40px;
+  column-gap: 5rem;
+  color: #252525;
+}
