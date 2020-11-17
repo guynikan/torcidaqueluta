@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var tag = document.createElement('script')
 
   tag.src = 'https://www.youtube.com/iframe_api'
-  var bundle = document.querySelector('[src="/dist/bundle.js"]')
+  var bundle = document.querySelector('script')
   console.log(bundle)
   bundle.parentNode.insertBefore(tag, bundle)
 
