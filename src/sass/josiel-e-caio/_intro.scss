@@ -1,0 +1,108 @@
+.introduce {
+  @include grid-structure;
+  grid-template-columns: minmax(500px, 2fr) minmax(600px, 1fr);
+}
+
+.introduce section {
+  margin-bottom: 30px;
+}
+
+.introduce section:first-of-type article p:last-of-type {
+  margin-bottom: 0;
+}
+
+.introduce section:last-of-type {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.introduce h1 {
+  @include title-2;
+  font-size: 5em;
+  text-align: center;
+  grid-column: 1 / -1;
+}
+
+.introduce .cite {
+  grid-column: 1 / 3;
+  height: fit-content;
+  margin: 50px 0;
+}
+
+.cite h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+.cite blockquote p {
+  font-size: 2.5em;
+  line-height: 1.1;
+  font-family: $font-3;
+  text-align: center;
+  position: relative;
+}
+
+.cite blockquote p::before {
+  font-family: FontAwesome;
+  content: '\f10d';
+  font-size: 40px;
+  position: absolute;
+  left: -25px;
+  top: -25px;
+  color: $green;
+}
+
+.foto-introduce {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.foto-introduce div {
+  margin: 0 15px;
+}
+
+.foto-introduce div:first-of-type {
+  margin-left: 0;
+}
+
+.foto-introduce div img {
+  @include border;
+  color: $orange;
+  width: 100%;
+}
+
+.foto-introduce div:nth-child(1n + 2) {
+  height: auto;
+  @include border;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
+.purple {
+  color: $purple;
+}
+
+#video-1 {
+  margin-top: 30px;
+  grid-column: 3 / -1;
+  width: 100%;
+  background: $black;
+}
+
+hr {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 20px;
+  background-color: $orange;
+  border: none;
+  border-radius: 5px;
+}
