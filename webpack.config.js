@@ -7,13 +7,12 @@ module.exports = {
   entry: path.join(__dirname, 'src', 'index'),
   watch: true,
   output: {
-    path: path.join(__dirname, 'dist'),
-    publicPath: '/dist/',
     filename: 'bundle.js',
-    chunkFilename: '[name].js'
+    path: path.resolve('dist')
   },
   devServer: {
-    contentBase: './dist'
+    contentBase: path.join(__dirname, 'dist'),
+    port: 9000
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'css/[name].css' }),
@@ -30,11 +29,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/i,
+        test: /\.html$/,
         use: ['html-loader']
       },
       {
-        test: /\.(jpg|png|gif)$/i,
+        test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -52,14 +51,13 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'svg/',
-              publicPath: 'svg/'
+              outputPath: 'svg/'
             }
           }
         ]
       },
       {
-        test: /\.scss$/i,
+        test: /\.scss$/,
         use: [
           MiniCssExtractPlugin.loader,
           {
