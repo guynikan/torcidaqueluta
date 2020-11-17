@@ -1,7 +1,8 @@
+@import 'reset';
 @import 'base';
 @import 'mixins';
-@import 'colors';
 @import 'grid';
 @import 'typography';
-@import 'home';
-@import 'josiel-e-caio';
+@import 'colors';
+@import './home/home';
+@import './josiel-e-caio/josiel-e-caio';

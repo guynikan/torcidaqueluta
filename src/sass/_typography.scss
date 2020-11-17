@@ -12,6 +12,7 @@ $font-3: 'Montaga', serif;
 
 @mixin title-2 {
   font-family: $font-3;
+  font-size: 4em;
 }
 
 @mixin type-1 {
