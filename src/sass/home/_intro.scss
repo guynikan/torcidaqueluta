@@ -1,0 +1,113 @@
+.intro {
+  @include grid-structure;
+  margin-top: 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  h2 {
+    @include title;
+    margin-top: 30px;
+    grid-column: 1 /-1;
+  }
+}
+
+.intro > article {
+  grid-column: span 2;
+  padding: 0 10px;
+}
+
+.ilustration {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+  grid-row: span 2;
+}
+
+.intro > article:nth-of-type(odd) {
+  max-width: 460px;
+}
+
+.intro > article:last-of-type {
+  grid-column: span 2;
+  min-width: 100%;
+}
+
+.intro > article:nth-of-type(2) p:first-child {
+  border-left: 15px solid $blue;
+  padding: 0 10px;
+}
+
+.intro article:first-of-type p:last-child {
+  border-right: 15px solid $purple;
+  padding-right: 10px;
+}
+
+.intro > article:nth-of-type(4) p:first-child {
+  border-left: 15px solid $pink;
+  padding: 0 10px;
+}
+
+.intro > article:nth-of-type(3) p:last-child::after {
+  content: '';
+  margin-top: 10px;
+  width: 80%;
+  height: 15px;
+  display: block;
+  background-color: $orange;
+}
+
+.stories {
+  align-self: center;
+  position: relative;
+  grid-column: span 2;
+  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.story-item {
+  width: 300px;
+  border: 15px solid currentColor;
+  border-radius: 5px;
+}
+
+.story-item:nth-child(1) {
+  color: $green;
+}
+
+.story-item:nth-child(2) {
+  position: relative;
+  bottom: -100px;
+  left: -80px;
+  color: $orange;
+}
+
+@media only screen and (max-width: 900px) {
+  .intro {
+    column-gap: 0rem;
+    padding: 0;
+    margin: 0 10px;
+  }
+
+  .olaleitor article {
+    margin: 0;
+  }
+
+  .olaleitor article p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .stories {
+    margin: 0;
+  }
+
+  .story-item {
+    width: 180px;
+    border: 10px solid currentColor;
+  }
+
+  .story-item:nth-child(2) {
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+  }
+}

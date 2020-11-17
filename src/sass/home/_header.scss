@@ -1,0 +1,26 @@
+.header {
+  background: url('./../svg/bandeira.svg') no-repeat;
+  background-position: 165px 180px;
+  background-size: 44px 384px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $black;
+  padding: 30px;
+}
+
+.header h1 {
+  font-family: 'Bebas Neue', cursive;
+  color: $orange;
+  font-size: 15vw;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  @include title;
+  color: $white;
+  font-size: 5vw;
+  margin: 0;
+}
