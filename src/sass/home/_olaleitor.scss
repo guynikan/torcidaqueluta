@@ -1,6 +1,4 @@
-// Olá leitor
-
-.olaleitor {
+.c-main-introduce {
   display: flex;
   margin: 0 auto;
   max-width: 1300px;
@@ -12,12 +10,12 @@
   background-position: 75% bottom;
 }
 
-.olaleitor h1 {
+.c-main-introduce__title {
   text-align: center;
   @include title-2;
 }
 
-.meninas {
+.c-main-introduce__members {
   flex: 1;
   display: flex;
   max-width: 100%;
@@ -26,8 +24,8 @@
   margin: 30px 0;
 }
 
-.meninas div {
-  flex: 1;
+.c-main-introduce__member {
+  flex: 1 1 130px;
   max-width: 200px;
   margin: 0 10px;
   margin-top: 10px;
@@ -35,29 +33,29 @@
   border-radius: 10px;
 }
 
-.meninas div img {
-  height: auto;
-  width: 100%;
-  min-width: 130px;
+.c-main-introduce__member--border-fire {
+  color: $fire;
+}
+.c-main-introduce__member--border-strawberry {
+  color: $strawberry;
 }
 
-.meninas div:first-child {
-  color: $orange;
-}
-.meninas div:last-child {
-  color: $pink;
-}
-
-.olaleitor article {
-  margin: 30px 100px 50px 100px;
-}
-
-.olaleitor article p {
+.c-main-introduce__text p {
   @include type-1;
   margin: 30px 60px;
 }
 
-.olaleitor article p:first-child {
+.c-main-introduce__paragraph--border-pear {
   padding: 0 10px;
-  border-left: 10px solid $green;
+  border-left: 10px solid $pear;
+}
+
+@media only screen and (max-width: 500px) {
+  .c-main-introduce {
+    padding: 10px;
+  }
+
+  .c-main-introduce__members {
+    justify-content: center;
+  }
 }
