@@ -33,6 +33,19 @@ module.exports = {
         use: ['html-loader']
       },
       {
+        test: /\.scss$/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          {
+            loader: 'css-loader',
+            options: {
+              url: false
+            }
+          },
+          'sass-loader'
+        ]
+      },
+      {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
@@ -54,19 +67,6 @@ module.exports = {
               outputPath: 'svg/'
             }
           }
-        ]
-      },
-      {
-        test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: {
-              url: false
-            }
-          },
-          'sass-loader'
         ]
       },
       {
