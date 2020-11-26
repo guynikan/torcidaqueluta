@@ -1,3 +1,17 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+
 p {
   margin: 30px 0;
+}
+
+#video-2,
+#video-3,
+#video-4,
+#video-5,
+#video-6,
+#video-7 {
+  @include video;
 }
