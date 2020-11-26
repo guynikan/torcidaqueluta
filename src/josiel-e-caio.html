@@ -6,19 +6,19 @@
     <title>Josiel e Caio</title>
   </head>
   <body>
-    <header class="introduce">
-      <h1 class="page-title">Josiel e Caio</h1>
-      <section>
-        <article class="cite">
+    <header class="c-introduce">
+      <h1 class="c-introduce__title">Josiel e Caio</h1>
+      <section class="c-introduce__section c-introduce__section--left">
+        <article class="c-introduce__quote">
           <blockquote>
-            <p>
+            <p class="c-introduce__quote__text">
               Acho que nós não pegamos na mão no automático, talvez por
               precaução. O Caio acha que é medo.
             </p>
           </blockquote>
         </article>
 
-        <article>
+        <article class="c-introduce__text">
           <p>
             Entre tantos momentos em que é inseguro para um gay apenas existir
             podemos registrar locais em que a homofobia se faz presente de forma
@@ -63,20 +63,22 @@
           </p>
         </article>
       </section>
-      <section>
-        <div class="foto-introduce">
-          <div>
+      <section class="c-introduce__section c-introduce__section--right">
+        <div class="c-introduce__character">
+          <div class="c-introduce__character__item c-introduce__photo">
             <img
               src="img/foto-apresentacao-josiel-e-caio.png"
               alt="Josiel e Caio"
             />
           </div>
-          <div class="green"></div>
-          <div class="blue"></div>
-          <div class="purple"></div>
+          <div class="c-introduce__character__item c-introduce__pear-bar"></div>
+          <div class="c-introduce__character__item c-introduce__sky-bar"></div>
+          <div
+            class="c-introduce__character__item c-introduce__violet-bar"
+          ></div>
         </div>
-        <article>
-          <p>
+        <article class="c-introduce__text">
+          <p class="c-introduce__paragraph--center">
             Josiel nasceu na capital paulista e é o irmão mais novo de
             Derisvaldo Filho, e foi ele, o irmão mais velho, quem apresentou a
             Josiel o futebol. Aos 9 anos, Josiel lembra de junto com seu irmão
@@ -88,8 +90,10 @@
             filhos. Mas, o que mais importava era que acima de tudo naquela casa
             havia torcedores.
           </p>
-          <div id="video-1"></div>
         </article>
+        <div class="c-introduce__video">
+          <div id="video-1"></div>
+        </div>
       </section>
       <hr />
     </header>
@@ -123,7 +127,7 @@
           partida do São Paulo x Palmeiras, e é claro que houve imediatamente um
           encanto das duas partes. Josiel brincou dizendo
         </p>
-        <blockquote>
+        <blockquote class="citacao-interna">
           <p>
             “nesse época minha mãe já tinha uns 60 anos, e a gente tava lá no
             meio da torcida organizada, fazendo barulho”.
@@ -151,6 +155,7 @@
         </p>
         <div id="video-3"></div>
       </article>
+      <div class="arcoiro"></div>
       <p>
         Caio e Josiel se conheceram em Vitória, Espírito Santo, em um evento
         LGBT. Caio era o responsável pela organização do evento e Josiel foi
@@ -162,10 +167,10 @@
       <p>
         Depois que se conheceram, Caio foi pela primeira vez ao estádio de
         futebol e, como acontece na maioria dos casos, se apaixonou pelo clima,
-        pela emoção, pela forma de ver os jogadores tão de perto, Conta Caio
-        sobre a excitação de presenciar um jogo ao vivo das arquibancadas.
+        pela emoção, pela forma de ver os jogadores tão de perto,
       </p>
-      <blockquote>
+
+      <blockquote class="citacao-interna">
         <p>
           “Eu acho que essa energia é incrível, eu acho que estar ali perto te
           faz ver o futebol de outra forma,de querer estar ali, de torcer, de
@@ -173,6 +178,10 @@
           aqui! Essa parte eu acho que é muito gostoso”.
         </p>
       </blockquote>
+      <p>
+        Conta Caio sobre a excitação de presenciar um jogo ao vivo das
+        arquibancadas.
+      </p>
       <p>
         Mas nem tudo são flores e boas partidas de futebol com emoção e
         felicidade não acontecem todo dia. Seria ótimo se aqui nós estivéssemos
@@ -248,7 +257,9 @@
         </p>
       </article>
       <div id="video-6"></div>
-      <div><img src="svg/maos-dadas.svg" alt="Mãos dadas" /></div>
+      <div class="maos-dadas">
+        <img src="svg/maos-dadas.svg" alt="Mãos dadas" />
+      </div>
       <article>
         <p>
           Não demorou muito para que eles chegassem a um acordo de que na hora
