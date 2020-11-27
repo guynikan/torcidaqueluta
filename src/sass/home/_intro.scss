@@ -1,7 +1,14 @@
 .c-main-content {
   @include grid-structure;
-  @include for-tablet-portrait-up {
-    padding: 30px 1.5%;
+  grid-template-columns: 1fr;
+}
+
+.c-main-content__firstpart {
+  display: grid;
+  column-gap: 4rem;
+  margin-bottom: 50px;
+  @include for-phone-only {
+    padding: 30px 0.5%;
   }
   @include for-tablet-landscape-up {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
@@ -12,9 +19,14 @@
   }
 
   &__title {
-    @include title;
-    margin-top: 30px;
+    font-size: 3em;
+    margin: 30px 0;
     grid-column: 1 /-1;
+    text-align: center;
+    font-family: $font-1;
+    @include for-phone-only {
+      font-size: 2em;
+    }
   }
 }
 
@@ -52,88 +64,61 @@
   background-color: $fire;
 }
 
+.c-main-content__lastpart {
+  display: grid;
+  column-gap: 4rem;
+
+  @include for-phone-only {
+    padding: 30px 0.5%;
+  }
+  @include for-tablet-landscape-up {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 600px;
+  }
+
+  @include for-desktop-up {
+    max-width: 1300px;
+  }
+}
+
+.c-main-content__text p:first-of-type {
+  margin-top: 0;
+}
+
 .c-main-content__stories {
   width: 100%;
-  align-self: center;
+  max-height: 1000px;
   position: relative;
   padding: 0 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .c-main-content__story-item {
   margin: 5px;
-  max-width: 250px;
+  @include for-tablet-landscape-up {
+    max-width: 250px;
+  }
   min-width: 110px;
   border: 0.5rem solid currentColor;
   border-radius: 5px;
 }
 
 .c-main-content__story-item--border-strawberry {
+  align-self: flex-start;
   color: $strawberry;
 }
 
 .c-main-content__story-item--border-fire {
-  @include for-tablet-landscape-up {
-    position: relative;
-  }
-  left: 40px;
+  align-self: flex-end;
+  top: -100px;
   color: $fire;
+  position: relative;
 }
 
 .c-main-content__story-item--border-violet {
+  align-self: flex-start;
+  top: -200px;
   position: relative;
   color: $violet;
 }
-
-// @media only screen and (max-width: 900px) {
-//   .intro {
-//     column-gap: 0rem;
-//     padding: 10px;
-//     margin: 0 10px;
-//   }
-
-//   .olaleitor article {
-//     margin: 0;
-//   }
-
-//   .olaleitor article p {
-//     margin-left: 0;
-//     margin-right: 0;
-//   }
-
-//   .stories {
-//     margin: 0;
-//   }
-
-//   .story-item {
-//     border: 10px solid currentColor;
-//   }
-
-//   .story-item:nth-child(2) {
-//     top: 0;
-//     left: 0;
-//     margin-left: 10px;
-//   }
-// }
-
-// @media only screen and (max-width: 1110px) {
-//   .intro {
-//     grid-template-columns: auto;
-//   }
-
-//   .intro article {
-//     grid-column: 100%;
-//   }
-
-//   .intro h2,
-//   .ilustration {
-//     grid-column: 1 / 3;
-//   }
-
-//   .story-item:nth-child(2) {
-//     position: static;
-//     margin-left: 10px;
-//   }
-// }
