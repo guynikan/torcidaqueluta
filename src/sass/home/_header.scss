@@ -20,7 +20,8 @@
 }
 
 .c-header__subtitle {
-  @include title;
+  text-align: center;
+  font-family: $font-1;
   color: $white;
   font-size: 5vw;
   margin: 0;
