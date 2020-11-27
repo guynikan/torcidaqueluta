@@ -7,7 +7,7 @@
   }
 
   @include for-desktop-up {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
     max-width: 1300px;
   }
 }
@@ -58,6 +58,7 @@
 }
 
 .c-introduce__character__item {
+  margin: 0 auto;
   @include for-tablet-portrait-up {
     margin: 0 auto;
   }
@@ -75,10 +76,7 @@
   color: $fire;
   width: 100%;
   border-radius: 5px;
-
-  @include for-tablet-portrait-up {
-    border: 30px solid currentColor;
-  }
+  border: 30px solid currentColor;
 
   @include for-desktop-up {
     border: 15px solid currentColor;
@@ -90,9 +88,7 @@
 .c-introduce__violet-bar {
   height: auto;
   border-radius: 5px;
-  @include for-tablet-portrait-up {
-    border: 50px solid currentColor;
-  }
+  border: 50px solid currentColor;
 
   @include for-desktop-up {
     max-width: 1300px;
