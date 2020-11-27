@@ -42,7 +42,9 @@
 
 .c-main-introduce__text p {
   @include type-1;
-  margin: 30px 60px;
+  @include for-desktop-up {
+    margin: 10px 60px;
+  }
 }
 
 .c-main-introduce__paragraph--border-pear {
