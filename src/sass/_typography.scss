@@ -3,12 +3,6 @@ $font-1: 'Bebas Neue', cursive;
 $font-2: 'Roboto', sans-serif;
 $font-3: 'Montaga', serif;
 
-@mixin title {
-  text-align: center;
-  font-size: 3em;
-  font-family: $font-1;
-}
-
 @mixin title-2 {
   font-family: $font-3;
   font-size: 4em;
