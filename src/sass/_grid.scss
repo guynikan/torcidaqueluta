@@ -10,4 +10,8 @@
   margin-bottom: 30px;
   @include type-1;
   box-shadow: -3px -3px 10px rgba($color: #000000, $alpha: 0.2);
+
+  @include for-phone-only {
+    padding: 0 10px;
+  }
 }
