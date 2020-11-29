@@ -8,15 +8,7 @@
 
   @include for-desktop-up {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
-    max-width: 1300px;
   }
-}
-
-.c-introduce__section--right {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 30px;
 }
 
 .c-introduce__title {
@@ -28,6 +20,13 @@
   @include for-tablet-portrait-up {
     font-size: 5em;
   }
+}
+
+.c-introduce__section--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
 }
 
 .c-introduce__quote {
@@ -151,13 +150,3 @@ hr {
   border: none;
   border-radius: 5px;
 }
-
-// @media only screen and (max-width: 900px) {
-//   .introduce {
-//     grid-template-columns: 1fr;
-//   }
-
-//   .introduce section:last-of-type article p {
-//     margin: 4% 0;
-//   }
-// }

@@ -40,22 +40,22 @@
   grid-row: span 2;
 }
 
-.c-main-content__paragraph--border-blue {
+.c-main-content__paragraph--sky-border {
   border-left: 15px solid $sky;
   padding: 0 10px;
 }
 
-.c-main-content__paragraph--border-purple {
+.c-main-content__paragraph--violet-border {
   border-right: 15px solid $violet;
   padding-right: 10px;
 }
 
-.c-main-content__paragraph--border-strawberry {
+.c-main-content__paragraph--strawberry-border {
   border-left: 15px solid $strawberry;
   padding: 0 10px;
 }
 
-.c-main-content__paragraph--border-fire::after {
+.c-main-content__paragraph--fire-border::after {
   content: '';
   margin-top: 10px;
   width: 80%;
@@ -104,19 +104,19 @@
   border-radius: 5px;
 }
 
-.c-main-content__story-item--border-strawberry {
+.c-main-content__story-item--strawberry-border {
   align-self: flex-start;
   color: $strawberry;
 }
 
-.c-main-content__story-item--border-fire {
+.c-main-content__story-item--fire-border {
   align-self: flex-end;
   top: -100px;
   color: $fire;
   position: relative;
 }
 
-.c-main-content__story-item--border-violet {
+.c-main-content__story-item--violet-border {
   align-self: flex-start;
   top: -200px;
   position: relative;

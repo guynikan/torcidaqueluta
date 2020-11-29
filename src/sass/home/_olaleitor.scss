@@ -2,12 +2,16 @@
   display: flex;
   margin: 0 auto;
   max-width: 1300px;
-  padding: 40px;
+  padding: 10px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   background: url('../svg/soccer-ball.svg') no-repeat;
   background-position: 75% bottom;
+
+  @include for-tablet-portrait-up {
+    padding: 40px;
+  }
 }
 
 .c-main-introduce__title {
@@ -33,10 +37,10 @@
   border-radius: 10px;
 }
 
-.c-main-introduce__member--border-fire {
+.c-main-introduce__member--fire-border {
   color: $fire;
 }
-.c-main-introduce__member--border-strawberry {
+.c-main-introduce__member--strawberry-border {
   color: $strawberry;
 }
 
@@ -47,17 +51,17 @@
   }
 }
 
-.c-main-introduce__paragraph--border-pear {
+.c-main-introduce__paragraph--pear-border {
   padding: 0 10px;
   border-left: 10px solid $pear;
 }
 
-@media only screen and (max-width: 500px) {
-  .c-main-introduce {
-    padding: 10px;
-  }
+// @media only screen and (max-width: 500px) {
+//   .c-main-introduce {
+//     padding: 10px;
+//   }
 
-  .c-main-introduce__members {
-    justify-content: center;
-  }
-}
+//   .c-main-introduce__members {
+//     justify-content: center;
+//   }
+// }
