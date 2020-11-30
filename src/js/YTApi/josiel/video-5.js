@@ -1,9 +1,9 @@
-import { videos } from './youtubeAPI'
+import { videosJosielECaio } from '../youtubeAPI'
 
-let video1 = {
+let video = {
   height: '360',
   width: '640',
-  videoId: 'NUruD6-fFZU',
+  videoId: 'vyEqxf3ijQg',
   hideVideoInfo: true,
   events: {
     onReady: null,
@@ -14,7 +14,7 @@ let video1 = {
     controls: 1,
     fs: 0,
     iv_load_policy: 3,
-    playlist: 'NUruD6-fFZU',
+    playlist: 'vyEqxf3ijQg',
     showinfo: 0,
     autoplay: 0,
     disableRelatedVideos: 1,
@@ -22,4 +22,4 @@ let video1 = {
   }
 }
 
-videos.push(video1)
+videosJosielECaio.push(video)

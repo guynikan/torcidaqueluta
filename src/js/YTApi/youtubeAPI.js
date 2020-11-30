@@ -1,4 +1,5 @@
-export const videos = []
+export const videosJosielECaio = []
+export const videosViviane = []
 
 document.addEventListener('DOMContentLoaded', function () {
   // 2. This code loads the IFrame Player API code asynchronously.
@@ -6,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   tag.src = 'https://www.youtube.com/iframe_api'
   var bundle = document.querySelector('script')
-  console.log(bundle)
   bundle.parentNode.insertBefore(tag, bundle)
 
   // 3. This function creates an <iframe> (and YouTube player)
@@ -14,13 +14,24 @@ document.addEventListener('DOMContentLoaded', function () {
   var player1
 
   window.onYouTubePlayerAPIReady = function () {
-    console.log(videos)
-    videos.map((video, i) => {
-      ;(video.events.onReady = onPlayerReady),
-        (video.events.onStateChange = onPlayerStateChange)
+    console.log(document.title)
+    if (document.title.includes('Josiel')) {
+      console.log('teste')
+      videosJosielECaio.map((video, i) => {
+        ;(video.events.onReady = onPlayerReady),
+          (video.events.onStateChange = onPlayerStateChange)
 
-      return new YT.Player(`video-${i + 1}`, video)
-    })
+        return new YT.Player(`video-${i + 1}`, video)
+      })
+    } else if (document.title.includes('Viviane')) {
+      console.log('teste2', videosViviane)
+      videosViviane.map((video, i) => {
+        ;(video.events.onReady = onPlayerReady),
+          (video.events.onStateChange = onPlayerStateChange)
+
+        return new YT.Player(`video-${i + 1}`, video)
+      })
+    }
   }
 
   // 4. The API will call this function when the video player is ready.

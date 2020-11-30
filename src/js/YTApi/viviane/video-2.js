@@ -1,9 +1,11 @@
-import { videos } from './youtubeAPI'
+import { videosViviane } from '../youtubeAPI'
 
-let video5 = {
+const videoId = 'Z1zSsIk4_ks'
+
+let video = {
   height: '360',
   width: '640',
-  videoId: 'vyEqxf3ijQg',
+  videoId: videoId,
   hideVideoInfo: true,
   events: {
     onReady: null,
@@ -14,7 +16,7 @@ let video5 = {
     controls: 1,
     fs: 0,
     iv_load_policy: 3,
-    playlist: 'vyEqxf3ijQg',
+    playlist: videoId,
     showinfo: 0,
     autoplay: 0,
     disableRelatedVideos: 1,
@@ -22,4 +24,4 @@ let video5 = {
   }
 }
 
-videos.push(video5)
+videosViviane.push(video)

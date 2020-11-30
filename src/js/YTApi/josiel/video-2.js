@@ -1,6 +1,6 @@
-import { videos } from './youtubeAPI'
+import { videosJosielECaio } from '../youtubeAPI'
 
-let video2 = {
+let video = {
   height: '360',
   width: '640',
   videoId: 'JureMweCgY4',
@@ -22,4 +22,4 @@ let video2 = {
   }
 }
 
-videos.push(video2)
+videosJosielECaio.push(video)
