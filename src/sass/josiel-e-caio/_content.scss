@@ -46,9 +46,10 @@
 }
 
 .c-main-content--first-interview__background {
-  padding-top: 100px;
+  padding-top: 60px;
   grid-column: 1 / -1;
   display: grid;
+  min-height: 385px;
   column-gap: 4rem;
   background: url('./../svg/arcoiro.svg') no-repeat;
   background-position: 10% 30%;
