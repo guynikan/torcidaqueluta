@@ -24,6 +24,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'josiel-e-caio.html',
       template: 'src/josiel-e-caio.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'viviane.html',
+      template: 'src/viviane.html'
     })
   ],
   module: {
