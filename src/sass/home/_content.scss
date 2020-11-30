@@ -1,0 +1,124 @@
+.c-main-content {
+  @include grid-structure;
+  grid-template-columns: 1fr;
+}
+
+.c-main-content__firstpart {
+  display: grid;
+  column-gap: 4rem;
+  margin-bottom: 50px;
+  @include for-phone-only {
+    padding: 30px 0.5%;
+  }
+  @include for-tablet-landscape-up {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  @include for-desktop-up {
+    max-width: 1300px;
+  }
+
+  &__title {
+    font-size: 3em;
+    margin: 30px 0;
+    grid-column: 1 /-1;
+    text-align: center;
+    font-family: $font-1;
+    @include for-phone-only {
+      font-size: 2em;
+    }
+  }
+}
+
+.c-main-content__text {
+  padding: 0 10px;
+}
+
+.c-main-content__illustration {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+  grid-row: span 2;
+}
+
+.c-main-content__paragraph--sky-border {
+  border-left: 15px solid $sky;
+  padding: 0 10px;
+}
+
+.c-main-content__paragraph--violet-border {
+  border-right: 15px solid $violet;
+  padding-right: 10px;
+}
+
+.c-main-content__paragraph--strawberry-border {
+  border-left: 15px solid $strawberry;
+  padding: 0 10px;
+}
+
+.c-main-content__paragraph--fire-border::after {
+  content: '';
+  margin-top: 10px;
+  width: 80%;
+  height: 15px;
+  display: block;
+  background-color: $fire;
+}
+
+.c-main-content__lastpart {
+  display: grid;
+  column-gap: 4rem;
+
+  @include for-phone-only {
+    padding: 30px 0.5%;
+  }
+  @include for-tablet-landscape-up {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 600px;
+  }
+
+  @include for-desktop-up {
+    max-width: 1300px;
+  }
+}
+
+.c-main-content__text p:first-of-type {
+  margin-top: 0;
+}
+
+.c-main-content__stories {
+  width: 100%;
+  max-height: 1000px;
+  position: relative;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.c-main-content__story-item {
+  margin: 5px;
+  @include for-tablet-landscape-up {
+    max-width: 250px;
+  }
+  min-width: 110px;
+  border: 0.5rem solid currentColor;
+  border-radius: 5px;
+}
+
+.c-main-content__story-item--strawberry-border {
+  align-self: flex-start;
+  color: $strawberry;
+}
+
+.c-main-content__story-item--fire-border {
+  align-self: flex-end;
+  top: -100px;
+  color: $fire;
+  position: relative;
+}
+
+.c-main-content__story-item--violet-border {
+  align-self: flex-start;
+  top: -200px;
+  position: relative;
+  color: $violet;
+}

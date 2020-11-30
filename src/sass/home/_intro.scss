@@ -1,124 +1,67 @@
-.c-main-content {
-  @include grid-structure;
-  grid-template-columns: 1fr;
-}
-
-.c-main-content__firstpart {
-  display: grid;
-  column-gap: 4rem;
-  margin-bottom: 50px;
-  @include for-phone-only {
-    padding: 30px 0.5%;
-  }
-  @include for-tablet-landscape-up {
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-  }
-
-  @include for-desktop-up {
-    max-width: 1300px;
-  }
-
-  &__title {
-    font-size: 3em;
-    margin: 30px 0;
-    grid-column: 1 /-1;
-    text-align: center;
-    font-family: $font-1;
-    @include for-phone-only {
-      font-size: 2em;
-    }
-  }
-}
-
-.c-main-content__text {
-  padding: 0 10px;
-}
-
-.c-main-content__illustration {
-  grid-column: 1 / -1;
-  margin: 0 auto;
-  grid-row: span 2;
-}
-
-.c-main-content__paragraph--sky-border {
-  border-left: 15px solid $sky;
-  padding: 0 10px;
-}
-
-.c-main-content__paragraph--violet-border {
-  border-right: 15px solid $violet;
-  padding-right: 10px;
-}
-
-.c-main-content__paragraph--strawberry-border {
-  border-left: 15px solid $strawberry;
-  padding: 0 10px;
-}
-
-.c-main-content__paragraph--fire-border::after {
-  content: '';
-  margin-top: 10px;
-  width: 80%;
-  height: 15px;
-  display: block;
-  background-color: $fire;
-}
-
-.c-main-content__lastpart {
-  display: grid;
-  column-gap: 4rem;
-
-  @include for-phone-only {
-    padding: 30px 0.5%;
-  }
-  @include for-tablet-landscape-up {
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 600px;
-  }
-
-  @include for-desktop-up {
-    max-width: 1300px;
-  }
-}
-
-.c-main-content__text p:first-of-type {
-  margin-top: 0;
-}
-
-.c-main-content__stories {
-  width: 100%;
-  max-height: 1000px;
-  position: relative;
-  padding: 0 10px;
+.c-main-introduce {
   display: flex;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-}
+  background: url('../svg/soccer-ball.svg') no-repeat;
+  background-position: 75% bottom;
 
-.c-main-content__story-item {
-  margin: 5px;
-  @include for-tablet-landscape-up {
-    max-width: 250px;
+  @include for-tablet-portrait-up {
+    padding: 40px;
   }
-  min-width: 110px;
-  border: 0.5rem solid currentColor;
-  border-radius: 5px;
 }
 
-.c-main-content__story-item--strawberry-border {
-  align-self: flex-start;
+.c-main-introduce__title {
+  text-align: center;
+  @include title-2;
+}
+
+.c-main-introduce__members {
+  flex: 1;
+  display: flex;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.c-main-introduce__member {
+  flex: 1 1 130px;
+  max-width: 200px;
+  margin: 0 10px;
+  margin-top: 10px;
+  border: 10px solid currentColor;
+  border-radius: 10px;
+}
+
+.c-main-introduce__member--fire-border {
+  color: $fire;
+}
+.c-main-introduce__member--strawberry-border {
   color: $strawberry;
 }
 
-.c-main-content__story-item--fire-border {
-  align-self: flex-end;
-  top: -100px;
-  color: $fire;
-  position: relative;
+.c-main-introduce__text p {
+  @include type-1;
+  @include for-desktop-up {
+    margin: 10px 60px;
+  }
 }
 
-.c-main-content__story-item--violet-border {
-  align-self: flex-start;
-  top: -200px;
-  position: relative;
-  color: $violet;
+.c-main-introduce__paragraph--pear-border {
+  padding: 0 10px;
+  border-left: 10px solid $pear;
 }
+
+// @media only screen and (max-width: 500px) {
+//   .c-main-introduce {
+//     padding: 10px;
+//   }
+
+//   .c-main-introduce__members {
+//     justify-content: center;
+//   }
+// }
