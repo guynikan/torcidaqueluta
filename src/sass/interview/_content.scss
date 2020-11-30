@@ -1,0 +1,116 @@
+.c-main-content__interview {
+  @include grid-structure;
+  margin-top: 30px;
+  @include for-tablet-portrait-up {
+    grid-template-columns: 1fr;
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+.c-main-content__interview__text--center {
+  grid-column: 1 / -1;
+}
+
+.c-main-content__interview__video {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  align-self: center;
+}
+
+.c-main-content__interview__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.c-main-content__interview__paragraph--colorful-border {
+  border-left: 15px solid $sky;
+  border-right: 15px solid $violet;
+  padding: 0 10px;
+}
+
+.c-main-content__interview__paragraph--sky-border {
+  border-left: 15px solid $sky;
+  padding-left: 10px;
+}
+
+.c-main-content__interview__paragraph--violet-border {
+  border-right: 15px solid $violet;
+  padding-right: 10px;
+}
+
+.c-main-content__interview__paragraph--strawberry-border {
+  border-right: 15px solid $strawberry;
+  padding-right: 10px;
+}
+
+.c-main-content__interview__quote--pear-border {
+  border-left: 15px solid $pear;
+  padding: 0 10px;
+
+  p {
+    font-size: 1.16em;
+    font-style: italic;
+  }
+}
+
+.c-main-content___interview__paragraph--fire-border-bottom::after {
+  content: '';
+  margin-top: 10px;
+  width: 80%;
+  height: 15px;
+  display: block;
+  background-color: $fire;
+}
+
+.c-main-content__background {
+  padding-top: 60px;
+  grid-column: 1 / -1;
+  display: grid;
+  min-height: 385px;
+  column-gap: 4rem;
+  background: url('./../svg/arcoiro.svg') no-repeat;
+  background-position: 10% 30%;
+  margin: 0 -30px;
+  @include for-phone-only {
+    margin: 0 -10px;
+  }
+  @include for-desktop-up {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    margin: 0;
+  }
+}
+
+.c-main-content__interview__text--center-vertically {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+
+  @include for-phone-only {
+    padding: 0 10px;
+  }
+
+  @include for-desktop-up {
+    padding: 0;
+  }
+}
+
+.c-main-content__interview__quote--sky-border {
+  border-left: 15px solid $sky;
+  padding: 0 10px;
+
+  p {
+    font-size: 1.16em;
+    font-style: italic;
+  }
+}
+
+.c-main-content__interview__illustration {
+  grid-row: span 2;
+}
