@@ -1,0 +1,53 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montaga&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+// Colors
+
+$color-fire: #dd7f4c;
+$color-pear: #92c868;
+$color-sky: #69a8e3;
+$color-violet: #6a4497;
+$color-strawberry: #d8555a;
+$color-black: #252525;
+$color-white: white;
+$color-whitesmoke: whitesmoke;
+
+// Fonts
+
+$ft-bebas: 'Bebas Neue', cursive;
+$ft-roboto: 'Roboto', sans-serif;
+$ft-montaga: 'Montaga', serif;
+
+$font-map: (
+  'title': (
+    $ft-bebas,
+    15vw
+  ),
+  'subtitle-1': (
+    $ft-bebas,
+    5vw
+  ),
+  'subtitle-2': (
+    $ft-bebas,
+    unquote('clamp(3rem, -1.515rem + 6.6vw, 5rem)')
+  ),
+  'title-1': (
+    $ft-montaga,
+    4em
+  ),
+  'text': (
+    $ft-roboto,
+    1.125em
+  ),
+  'quote': (
+    $ft-roboto,
+    unquote('clamp(1.5rem, -0.589rem + 58.928vw, 2.5rem)')
+  )
+);
+
+// Spacers
+
+$sm: 10px;
+$md: 30px;
+$lg: 40px;
+$xl: 60px;

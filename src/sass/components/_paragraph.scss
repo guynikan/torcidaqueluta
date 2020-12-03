@@ -1,0 +1,58 @@
+.c-paragraph-border {
+  &__left {
+    @include border('sm', 'left');
+
+    &--pear-border {
+      border-color: $color-pear;
+    }
+
+    &--sky-border {
+      border-color: $color-sky;
+    }
+
+    &--strawberry-border {
+      border-color: $color-strawberry;
+    }
+  }
+
+  &__right {
+    @include border('sm', 'right');
+
+    &--violet-border {
+      border-color: $color-violet;
+    }
+
+    &--strawberry-border {
+      border-color: $color-strawberry;
+    }
+  }
+
+  &__bottom {
+    &::after {
+      content: '';
+      margin-top: $sm;
+      width: 80%;
+      height: $sm;
+      display: block;
+      background-color: currentColor;
+    }
+
+    &--fire-border {
+      &::after {
+        background-color: $color-fire;
+      }
+    }
+    &--strawberry-border {
+      &::after {
+        background-color: $color-strawberry;
+      }
+    }
+  }
+
+  &__left-and-right {
+    &--sky-and-violet-border {
+      @include border('sm', 'left', $color-sky);
+      @include border('sm', 'right', $color-violet);
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.c-bar {
+  height: auto;
+  margin: 0 $sm;
+  border-radius: 5px;
+  border: 20px solid currentColor;
+
+  &--fire {
+    color: $color-fire;
+  }
+
+  &--pear {
+    color: $color-pear;
+  }
+
+  &--sky {
+    color: $color-sky;
+  }
+
+  &--violet {
+    color: $color-violet;
+  }
+}

@@ -1,0 +1,45 @@
+// Fonts
+
+@mixin font-default($font-name) {
+  $font: map-get($font-map, $font-name);
+  @if $font == null {
+    @error "Fonte #{$font-name} não disponível";
+  }
+
+  $family: nth($font, 1);
+  $size: nth($font, 2);
+
+  font: {
+    family: $family;
+    size: $size;
+  }
+}
+
+// Border
+
+@mixin border($size: 'md', $direction: null, $color: currentColor) {
+  @if $size == 'sm' {
+    $border: $sm solid $color;
+    @if $direction == null {
+      border: $border;
+    } @else {
+      border-#{$direction}: $border;
+      padding-#{$direction}: $sm;
+    }
+  } @else if $size == 'md' {
+    $border: $md solid $color;
+    @if $direction == null {
+      border: $border;
+    } @else {
+      border-#{$direction}: $border;
+      padding-#{$direction}: $sm;
+    }
+  }
+}
+
+// Flex
+
+@mixin display-flex($direction: column) {
+  display: flex;
+  flex-direction: $direction;
+}

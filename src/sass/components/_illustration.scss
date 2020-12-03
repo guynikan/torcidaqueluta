@@ -1,0 +1,9 @@
+.c-illustration {
+  grid-row: span 2;
+}
+
+.c-illustration--center {
+  grid-column: 1 / -1;
+  margin: 0 auto;
+  grid-row: span 2;
+}

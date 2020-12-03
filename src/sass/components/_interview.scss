@@ -1,0 +1,50 @@
+.c-interview {
+  @include grid-structure;
+  margin-top: $md;
+  @include for-tablet-portrait-up {
+    grid-template-columns: 1fr;
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  &__text {
+    &--center {
+      grid-column: 1 / -1;
+    }
+
+    &--center-vertically {
+      display: flex;
+      align-items: center;
+      padding: 0 $md;
+
+      @include for-phone-only {
+        padding: 0 $sm;
+      }
+
+      @include for-desktop-up {
+        padding: 0;
+      }
+    }
+  }
+
+  &__quote {
+    @include border('sm', 'left');
+
+    &--pear-border {
+      border-color: $color-pear;
+    }
+
+    &--sky-border {
+      border-color: $color-sky;
+    }
+
+    &__paragraph {
+      font: {
+        size: 1.18em;
+        style: italic;
+      }
+    }
+  }
+}

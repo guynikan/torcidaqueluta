@@ -4,25 +4,22 @@
   background-size: 44px 384px;
   height: 100vh;
   width: 100%;
-  display: flex;
   justify-content: center;
-  flex-direction: column;
-  background-color: $black;
-  padding: 30px;
+  background-color: $color-black;
+  padding: $md;
+  @include display-flex;
 }
 
 .c-header__title {
-  font-family: 'Bebas Neue', cursive;
-  color: $fire;
-  font-size: 15vw;
   text-align: center;
-  margin-bottom: 20px;
+  color: $color-fire;
+  margin-bottom: $md;
+  @include font-default('title');
 }
 
 .c-header__subtitle {
   text-align: center;
-  font-family: $font-1;
-  color: $white;
-  font-size: 5vw;
+  color: $color-white;
   margin: 0;
+  @include font-default('subtitle-1');
 }

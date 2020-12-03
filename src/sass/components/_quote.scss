@@ -1,0 +1,39 @@
+.c-quote {
+  grid-column: 1 / 3;
+  height: fit-content;
+  margin: $xl 0;
+
+  &__text {
+    @include font-default('quote');
+    line-height: 1.1;
+    text-align: center;
+    position: relative;
+    margin: 0 $sm;
+
+    &::before {
+      font-family: FontAwesome;
+      content: '\f10d';
+      position: absolute;
+      color: currentColor;
+      font-size: unquote('clamp(1.5rem, -0.589rem + 58.928vw, 2.5rem)');
+      left: -25px;
+      top: -10px;
+      @include for-tablet-portrait-up {
+        top: -25px;
+        font-size: $lg;
+      }
+    }
+
+    &--pear::before {
+      color: $color-pear;
+    }
+
+    &--fire::before {
+      color: $color-fire;
+    }
+
+    &--strawberry::before {
+      color: $color-strawberry;
+    }
+  }
+}

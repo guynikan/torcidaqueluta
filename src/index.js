@@ -1,4 +1,4 @@
-import './sass/index.scss'
+import './sass/main.scss'
 import './js/YTApi/youtubeAPI'
 import './js/YTApi/josiel/video-1'
 import './js/YTApi/josiel/video-2'

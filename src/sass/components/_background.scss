@@ -1,0 +1,17 @@
+.c-background {
+  padding-top: 60px;
+  grid-column: 1 / -1;
+  display: grid;
+  min-height: 385px;
+  column-gap: 4rem;
+  background: url('./../svg/arcoiro.svg') no-repeat;
+  background-position: 10% 30%;
+  margin: 0 -30px;
+  @include for-phone-only {
+    margin: 0 -10px;
+  }
+  @include for-desktop-up {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    margin: 0;
+  }
+}

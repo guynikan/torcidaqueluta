@@ -1,0 +1,43 @@
+.c-character {
+  margin: 20px 0;
+  grid-column: span 2;
+  display: flex;
+  flex-direction: row;
+
+  @include for-tablet-portrait-up {
+    margin: $xl auto;
+  }
+
+  &__item {
+    margin: 0 20px;
+    @include for-desktop-up {
+      margin: 0 $sm;
+    }
+  }
+
+  &__photo {
+    margin-right: $sm;
+
+    &__img {
+      width: 100%;
+      border-radius: 5px;
+      border: 10px solid currentColor;
+
+      @include for-desktop-up {
+        border: 15px solid currentColor;
+      }
+    }
+
+    &--fire-border {
+      color: $color-fire;
+    }
+
+    &--strawberry-border {
+      color: $color-strawberry;
+    }
+
+    &--violet-border {
+      color: $color-violet;
+    }
+  }
+}

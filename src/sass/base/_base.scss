@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  justify-items: center;
+}
+
+p {
+  @include font-default('text');
+  margin: 30px 0;
+}

@@ -1,0 +1,37 @@
+.c-stories {
+  width: 100%;
+  max-height: 1000px;
+  position: relative;
+  padding: 0 $sm;
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    margin: 5px;
+    min-width: 110px;
+    @include border('sm');
+    border-radius: $sm;
+    @include for-tablet-landscape-up {
+      max-width: 250px;
+    }
+
+    &--strawberry-border {
+      align-self: flex-start;
+      color: $color-strawberry;
+    }
+
+    &--fire-border {
+      align-self: flex-end;
+      top: -100px;
+      color: $color-fire;
+      position: relative;
+    }
+
+    &--violet-border {
+      align-self: flex-start;
+      top: -200px;
+      position: relative;
+      color: $color-violet;
+    }
+  }
+}

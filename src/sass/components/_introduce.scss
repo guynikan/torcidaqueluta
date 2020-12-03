@@ -1,0 +1,30 @@
+.c-introduce {
+  @include grid-structure;
+  margin-top: $md;
+
+  @include for-tablet-portrait-up {
+    grid-template-columns: 1fr;
+  }
+
+  @include for-desktop-up {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+
+  &__title {
+    @include font-default('title-1');
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 3em;
+
+    @include for-tablet-portrait-up {
+      font-size: 5em;
+    }
+  }
+}
+
+.c-introduce__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: $md;
+}

@@ -1,0 +1,16 @@
+.c-introduce__hr {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 20px;
+  background-color: currentColor;
+  border: none;
+  border-radius: 5px;
+}
+
+.c-introduce__hr--fire {
+  color: $color-fire;
+}
+
+.c-introduce__hr--pear {
+  color: $color-pear;
+}

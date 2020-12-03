@@ -1,0 +1,19 @@
+.c-main-introduce {
+  @include display-flex;
+  margin: 0 auto;
+  max-width: 1300px;
+  padding: $sm;
+  justify-content: center;
+  align-items: center;
+  background: url('../svg/soccer-ball.svg') no-repeat;
+  background-position: 75% bottom;
+
+  @include for-tablet-portrait-up {
+    padding: $lg;
+  }
+
+  &__title {
+    text-align: center;
+    @include font-default('title-1');
+  }
+}

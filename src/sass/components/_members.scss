@@ -1,0 +1,25 @@
+.c-members {
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: $md 0;
+
+  &__member {
+    flex: 1 1 130px;
+    max-width: 200px;
+    margin: 0 $sm;
+    margin-top: $sm;
+    @include border('sm');
+    border-radius: $sm;
+
+    &--fire-border {
+      color: $color-fire;
+    }
+
+    &--strawberry-border {
+      color: $color-strawberry;
+    }
+  }
+}
