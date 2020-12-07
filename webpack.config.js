@@ -56,7 +56,7 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'img/'
+              outputPath: 'assets/img/'
             }
           }
         ]
@@ -68,7 +68,19 @@ module.exports = {
             loader: 'file-loader',
             options: {
               name: '[name].[ext]',
-              outputPath: 'svg/'
+              outputPath: 'assets/svg/'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.mp4$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/video/'
             }
           }
         ]
