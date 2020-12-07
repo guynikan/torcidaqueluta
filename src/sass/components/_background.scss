@@ -4,7 +4,7 @@
   display: grid;
   min-height: 385px;
   column-gap: 4rem;
-  background: url('./../svg/arcoiro.svg') no-repeat;
+  background: url('./../assets/svg/arcoiro.svg') no-repeat;
   background-position: 10% 30%;
   margin: 0 -30px;
   @include for-phone-only {
