@@ -16,7 +16,7 @@
     cursor: default;
     transition: all 0.5s linear;
     @include font-default('title');
-    animation: fadeIn 1.5s ease-in;
+    animation: zoomIn 1.5s ease-in;
 
     &::before {
       content: '';
@@ -27,25 +27,45 @@
       top: 30px;
       z-index: -1;
       opacity: 0;
-      animation: opacidade 2s linear;
-      animation-delay: 2.5s;
+      animation: fadeIn 2s linear;
       animation-fill-mode: forwards;
+      animation-delay: 2.5s;
+
+      @include for-phone-only {
+        animation: none;
+      }
     }
   }
 
   &__subtitle {
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
     position: relative;
     text-align: center;
     color: $color-white;
-    margin: 0;
+    margin: 0 auto;
     cursor: default;
     transition: all 0.5s linear;
     @include font-default('subtitle-1');
-    animation: fadeIn 2.5s ease-in;
+    animation: typing 3.5s steps(40, end);
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
   }
 }
 
-@keyframes opacidade {
+@keyframes typing {
+  from {
+    opacity: 1;
+    width: 0;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -55,7 +75,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes zoomIn {
   0% {
     transform: scale(0.2);
   }
