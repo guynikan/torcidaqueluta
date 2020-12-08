@@ -4,11 +4,13 @@
 
 @import './base/reset';
 @import './base/base';
+@import './base/animations';
 
 @import './layout/grid';
 @import './layout/header';
 @import './layout/_footer';
 
+@import './components/arrow';
 @import './components/main-introduce';
 @import './components/introduce';
 @import './components/bar';
