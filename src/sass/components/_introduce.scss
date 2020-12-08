@@ -19,6 +19,12 @@
     @include for-tablet-portrait-up {
       font-size: 5em;
     }
+
+    &--span {
+      text-align: center;
+      grid-column: 1 / -1;
+      color: #b8b8b8;
+    }
   }
 }
 
