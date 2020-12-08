@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: grid;
   justify-items: center;
@@ -6,6 +10,7 @@ body {
 p {
   @include font-default('text');
   margin: 30px 0;
+  cursor: default;
 }
 
 main {
