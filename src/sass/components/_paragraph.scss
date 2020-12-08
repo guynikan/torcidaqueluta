@@ -32,7 +32,7 @@
     &::after {
       content: '';
       margin-left: 10px;
-      width: 50px;
+      width: 10%;
       background-color: currentColor;
     }
 
@@ -43,7 +43,9 @@
     }
 
     &--strawberry-border {
-      border-color: $color-strawberry;
+      &::after {
+        background-color: $color-strawberry;
+      }
     }
   }
 
