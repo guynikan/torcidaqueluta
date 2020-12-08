@@ -7,6 +7,7 @@
   flex-direction: column;
 
   &__item {
+    overflow: hidden;
     margin: 5px;
     min-width: 110px;
     @include border('sm');
@@ -33,6 +34,13 @@
       top: -200px;
       position: relative;
       color: $color-violet;
+    }
+
+    &__photo {
+      transition: all 1s ease;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
