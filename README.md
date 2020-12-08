@@ -8,8 +8,6 @@ Então agora em 2020 resolvi refazer o site com novas ferramentas e uma nova car
 
 O protótipo do projeto pode ser visto em: https://www.figma.com/file/mfShRKSbeeChdF5AE0kYtV/Torcidaqueluta?node-id=0%3A1
 
-E o resultado em:
-
 Segue então alguns detalhes técnicos do projeto.
 
 As tecnologias utilizadas foram:
@@ -28,4 +26,5 @@ Além de ter investido um bom tempo na qualidade do código a mesma atenção fo
 
 Sendo assim, todo o site tem um estilo responsivo e adaptativo para diversos dispositivos.
 
-![Home](https://user-images.githubusercontent.com/36284169/101295663-ba7deb00-37fd-11eb-833c-308a3aa1272a.png)
+O projeto ainda está em desenvolvimento, mas uma prévia da página home pode ser vista abaixo:
+![Home](https://user-images.githubusercontent.com/36284169/101538193-7d3f6780-397b-11eb-8cbf-7a9fc9056a98.png)
