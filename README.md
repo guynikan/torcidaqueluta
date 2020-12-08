@@ -3,7 +3,7 @@
 O torcida é um projeto realizado pelas jornalistas Debora e Marilia sobre pessoas LGBTQIA+ nos estádios de futebol.
 
 É um projeto que eu gosto bastante e acho muito bonito.
-Tendo sua primeira versão realizada em 2018.
+Tendo sua primeira versão realizada em 2019.
 Então agora em 2020 resolvi refazer o site com novas ferramentas e uma nova cara também.
 
 O protótipo do projeto pode ser visto em: https://www.figma.com/file/mfShRKSbeeChdF5AE0kYtV/Torcidaqueluta?node-id=0%3A1
