@@ -5,8 +5,6 @@
     leftBorder = document.querySelectorAll('.hiddenLeftBorder')
     rightBorder = document.querySelectorAll('.hiddenRightBorder')
     bottomBorder = document.querySelectorAll('.hiddenBottomBorder')
-
-    console.log(bottomBorder)
     windowHeight = window.innerHeight
   }
 

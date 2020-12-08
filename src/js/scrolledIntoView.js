@@ -1,4 +1,4 @@
-;(function () {
+document.addEventListener('DOMContentLoaded', function () {
   var elements
   var windowHeight
 
@@ -24,4 +24,4 @@
 
   init()
   checkPosition()
-})()
+})

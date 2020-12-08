@@ -14,9 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var player1
 
   window.onYouTubePlayerAPIReady = function () {
-    console.log(document.title)
     if (document.title.includes('Josiel')) {
-      console.log('teste')
       videosJosielECaio.map((video, i) => {
         ;(video.events.onReady = onPlayerReady),
           (video.events.onStateChange = onPlayerStateChange)
@@ -24,7 +22,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return new YT.Player(`video-${i + 1}`, video)
       })
     } else if (document.title.includes('Viviane')) {
-      console.log('teste2', videosViviane)
       videosViviane.map((video, i) => {
         ;(video.events.onReady = onPlayerReady),
           (video.events.onStateChange = onPlayerStateChange)
@@ -37,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // 4. The API will call this function when the video player is ready.
   function onPlayerReady (event) {
     event.target.mute()
-    // event.target.playVideo()
+    event.target.playVideo()
   }
 
   // 5. The API calls this function when the player's state changes.
