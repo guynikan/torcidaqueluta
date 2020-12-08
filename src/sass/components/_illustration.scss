@@ -7,3 +7,23 @@
   margin: 0 auto;
   grid-row: span 2;
 }
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in-element {
+  animation: zoomIn 1.4s;
+}
+
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

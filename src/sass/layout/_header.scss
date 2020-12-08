@@ -4,7 +4,7 @@
   height: 100vh;
   width: 100%;
   justify-content: center;
-  padding: $md;
+  padding: 30px 30px 10px 30px;
   @include display-flex;
   background-color: $color-black;
 
@@ -48,39 +48,8 @@
     cursor: default;
     transition: all 0.5s linear;
     @include font-default('subtitle-1');
-    animation: typing 3.5s steps(40, end);
+    animation: typing 3.5s steps(50, end);
     animation-fill-mode: forwards;
     animation-delay: 3.5s;
-  }
-}
-
-@keyframes typing {
-  from {
-    opacity: 1;
-    width: 0;
-  }
-  to {
-    opacity: 1;
-    width: 100%;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes zoomIn {
-  0% {
-    transform: scale(0.2);
-  }
-
-  100% {
-    transform: scale(1);
   }
 }

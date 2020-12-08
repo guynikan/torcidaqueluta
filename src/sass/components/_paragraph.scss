@@ -1,25 +1,45 @@
 .c-paragraph-border {
   &__left {
-    @include border('sm', 'left');
+    display: flex;
+    &::before {
+      content: '';
+      margin-right: 10px;
+      width: 140px;
+      background-color: currentColor;
+    }
 
     &--pear-border {
-      border-color: $color-pear;
+      &::before {
+        background-color: $color-pear;
+      }
     }
 
     &--sky-border {
-      border-color: $color-sky;
+      &::before {
+        background-color: $color-sky;
+      }
     }
 
     &--strawberry-border {
-      border-color: $color-strawberry;
+      &::before {
+        background-color: $color-strawberry;
+      }
     }
   }
 
   &__right {
-    @include border('sm', 'right');
+    display: flex;
+    &::after {
+      content: '';
+      margin-left: 10px;
+      width: 50px;
+      background-color: currentColor;
+    }
 
     &--violet-border {
-      border-color: $color-violet;
+      &::after {
+        background-color: $color-violet;
+      }
     }
 
     &--strawberry-border {
@@ -32,7 +52,7 @@
       content: '';
       margin-top: $sm;
       width: 80%;
-      height: $sm;
+      height: 13px;
       display: block;
       background-color: currentColor;
     }
@@ -55,4 +75,19 @@
       @include border('sm', 'right', $color-violet);
     }
   }
+}
+
+.hiddenBottomBorder::after,
+.hiddenLeftBorder::before,
+.hiddenRightBorder::after {
+  opacity: 0;
+}
+
+.showBottomBorder::after {
+  animation: showBottomBorder 2s ease forwards;
+}
+
+.showLeftBorder::before,
+.showRightBorder::after {
+  animation: showSideBorder 2s ease forwards;
 }

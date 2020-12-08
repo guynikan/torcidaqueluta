@@ -11,6 +11,7 @@
     min-width: 110px;
     @include border('sm');
     border-radius: $sm;
+    transition: all 0.5s linear;
     @include for-tablet-landscape-up {
       max-width: 250px;
     }
