@@ -28,6 +28,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'viviane.html',
       template: 'src/viviane.html'
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'ze.html',
+      template: 'src/ze.html'
     })
   ],
   module: {
